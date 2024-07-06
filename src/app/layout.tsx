@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 
+import theme from "../styles/theme";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-    title: "Muhammad Taruna",
+    title: "One-Stop-Web",
 };
 
 export default function RootLayout({
@@ -19,7 +21,6 @@ export default function RootLayout({
                     <ThemeProvider theme={theme}>
                         <Header />
                         {children}
-                        <Footer />
                     </ThemeProvider>
                 </AppRouterCacheProvider>
             </body>
