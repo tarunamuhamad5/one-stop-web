@@ -1,24 +1,136 @@
-"use client";
-import React from "react";
-import { Typography, Link, Box, styled, Container } from "@mui/material";
-import { useRouter } from "next/navigation";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import IconButton from "@mui/material/IconButton";
+import Link from "@mui/material/Link";
+import Stack from "@mui/material/Stack";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 
-const Footer = () => {
-    const router = useRouter();
+import MailIcon from "@mui/icons-material/Mail";
+import FaxIcon from "@mui/icons-material/Fax";
 
-    const FooterBox = styled(Box)(({ theme }) => ({
-        width: "flex",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: theme.spacing(2.1),
-        backgroundColor: "#212121",
-        left: 0,
-        [theme.breakpoints.down("md")]: {
-            padding: theme.spacing(2),
-        },
-    }));
-    return <FooterBox>test</FooterBox>;
+const logoStyle = {
+    width: "140px",
+    height: "auto",
 };
 
-export default Footer;
+function Copyright() {
+    return (
+        <Typography variant="body2" color="text.secondary">
+            {"Copyright © "}
+            <Link href="#">Alya Safadella&nbsp;</Link>
+            {new Date().getFullYear()}
+        </Typography>
+    );
+}
+
+export default function Footer() {
+    return (
+        <Container
+            sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: { xs: 3, sm: 2 },
+                py: { xs: 3, sm: 2 },
+                textAlign: { sm: "center", md: "left" },
+            }}
+        >
+            <Box
+                sx={{
+                    display: "flex",
+                    flexDirection: { xs: "column", sm: "row" },
+                    width: "100%",
+                    justifyContent: "space-between",
+                }}
+            >
+                <Box
+                    sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: 1,
+                        minWidth: { xs: "100%", sm: "60%" },
+                    }}
+                >
+                    <Box sx={{ width: { xs: "100%", sm: "60%" } }}>
+                        <Typography
+                            variant="body2"
+                            fontWeight={600}
+                            gutterBottom
+                        >
+                            Badan Pusat Statistik Kabupaten Empat Lawang
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="text.secondary"
+                            mb={2}
+                        >
+                            Jl. Lintas Sumatera No. 35 Kecamatan Tebing Tinggi
+                            Kabupaten Empat Lawang Sumatera Selatan
+                        </Typography>
+                    </Box>
+                </Box>
+                <Box
+                    sx={{
+                        display: { xs: "none", sm: "flex" },
+                        flexDirection: "column",
+                        gap: 1,
+                    }}
+                >
+                    <Typography variant="body2" fontWeight={600}>
+                        Contact Us :
+                    </Typography>
+
+                    <Stack
+                        direction="row"
+                        justifyContent="left"
+                        alignContent={"center"}
+                        spacing={2}
+                        useFlexGap
+                        sx={{
+                            color: "text.secondary",
+                            textAlign: "center",
+                        }}
+                    >
+                        <FaxIcon />
+                        <Typography variant="body2" fontWeight={700}>
+                            : (0702) 7321262
+                        </Typography>
+                    </Stack>
+                    <Stack
+                        direction="row"
+                        justifyContent="left"
+                        alignContent={"center"}
+                        spacing={2}
+                        useFlexGap
+                        sx={{
+                            color: "text.secondary",
+                            textAlign: "center",
+                        }}
+                    >
+                        <MailIcon />
+                        <Typography variant="body2" fontWeight={700}>
+                            : bps1611@bps.go.id
+                        </Typography>
+                    </Stack>
+                </Box>
+            </Box>
+            <Box
+                sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    pt: { xs: 4, sm: 2 },
+                    width: "100%",
+                    borderTop: "2px solid",
+                    borderColor: "divider",
+                }}
+            >
+                <div>
+                    <Copyright />
+                </div>
+            </Box>
+        </Container>
+    );
+}

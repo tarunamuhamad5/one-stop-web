@@ -32,10 +32,9 @@ export default function Landing() {
                 alt="background-image"
                 src="/background/kantor-darkening.jpeg"
                 fill={true}
+                objectFit="cover"
                 style={{
                     zIndex: -1,
-                    background:
-                        "linear-gradient(rgba(0,0,0,0.6), rgb(0,0,0,0.6))",
                 }}
             />
             <ContainerContent>
