@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import { Box, Container, Grid, styled, Typography } from "@mui/material";
+import { Box, Container, styled, Typography } from "@mui/material";
 import Image from "next/image";
-import zIndex from "@mui/material/styles/zIndex";
 
 export default function Landing() {
     const ContainerContent = styled(Container)(({ theme }) => ({
@@ -18,14 +17,6 @@ export default function Landing() {
                 alignContent: "center",
                 display: "flex",
                 flexWrap: "wrap",
-                left: 0,
-                top: 0,
-                // backgroundImage:
-                //     "linear-gradient(rgba(0,0,0,0.6), rgb(0,0,0,0.6))),url(/background/kantor.jpeg)",
-                // backgroundPosition: "center center",
-                // backgroundRepeat: "no-repeat",
-                // backgroundAttachment: "fixed",
-                // backgroundSize: "cover",
             }}
         >
             <Image

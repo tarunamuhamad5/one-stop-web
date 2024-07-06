@@ -101,19 +101,19 @@ const Header = () => {
                         </NavBarButton>
                         <NavBarButton
                             variant="body2"
-                            onClick={() => router.push("./experience")}
+                            onClick={() => router.push("./Teknis")}
                         >
                             Teknis
                         </NavBarButton>
                         <NavBarButton
                             variant="body2"
-                            onClick={() => router.push("./contact")}
+                            onClick={() => router.push("./Administrasi")}
                         >
                             Administrasi
                         </NavBarButton>
                         <NavBarButton
                             variant="body2"
-                            onClick={() => router.push("./blog")}
+                            onClick={() => router.push("./Contacts")}
                         >
                             Hubungi Kami
                         </NavBarButton>
