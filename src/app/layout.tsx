@@ -19,7 +19,7 @@ export default function RootLayout({
             <body>
                 <AppRouterCacheProvider>
                     <ThemeProvider theme={theme}>
-                        <Header />
+                        <Header enableScrollTransition={true} />
                         {children}
                         <Footer />
                     </ThemeProvider>

@@ -1,14 +1,39 @@
 "use client";
 import { Box, Container, styled, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 
 const Header = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(true);
+
+    const pathname = usePathname();
+    const [enableScrollTransition, setEnableScrollTransition] = useState(
+        pathname === "/"
+    );
+
     const router = useRouter();
 
     useEffect(() => {
+        const handleRouteChange = (url: string) => {
+            setEnableScrollTransition(url === "/");
+            setIsScrolled(true);
+        };
+
+        // Set initial state on mount
+        setEnableScrollTransition(router.pathname === "/specific-page");
+
+        // Listen to route changes
+        window.addEventListener("scroll", handleScroll);
+
+        // Clean up listener
+        return () => {
+            router.events.off("routeChangeComplete", handleRouteChange);
+        };
+    });
+
+    useEffect(() => {
+        if (!enableScrollTransition) return;
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             if (scrollPosition > 0) {
