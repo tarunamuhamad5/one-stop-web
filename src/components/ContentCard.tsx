@@ -39,7 +39,7 @@ const ContentCard = ({ DataContent }: any) => {
             {DataContent.map((item: any, index: any) => (
                 <CardContent
                     key={index}
-                    variant="naked"
+                    variant="elevation"
                     onClick={() => {
                         if (item.websiteType === "external") {
                             OpenWebsite(item.link);

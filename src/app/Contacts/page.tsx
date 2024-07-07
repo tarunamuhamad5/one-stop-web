@@ -25,7 +25,7 @@ export default function Teknis() {
                         width="600"
                         height="600"
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        referrerPolicy="no-referrer-when-downgrade"
                     />
                 </Container>
             </Box>
