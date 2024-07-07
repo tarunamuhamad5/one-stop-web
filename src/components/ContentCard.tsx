@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useTheme } from "@mui/material/styles";
-import { Box, Card, CardContent, styled, Typography } from "@mui/material";
+import { Box, Card, styled, Typography } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -17,8 +17,6 @@ const ContentCard = ({ DataContent }: any) => {
     }));
 
     const CardContent = styled(Card)(({ theme }) => ({
-        minHeight: "500",
-        minWidth: "500",
         borderRadius: "5%",
         margin: "1%",
     }));
@@ -51,12 +49,15 @@ const ContentCard = ({ DataContent }: any) => {
                     }}
                 >
                     <CardContent>
-                        <Image
-                            width="300"
-                            height="300"
-                            alt={item.title}
-                            src={item.src_image}
-                        />
+                        <Box minHeight={300} minWidth={300}>
+                            <Image
+                                key={index}
+                                width="300"
+                                height="300"
+                                alt={item.title}
+                                src={item.src_image}
+                            />
+                        </Box>
 
                         <div>
                             <ContentTitle variant="h5" align="center">

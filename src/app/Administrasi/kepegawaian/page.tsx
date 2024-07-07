@@ -20,7 +20,7 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h1">Susenas Pages</Typography>
+                    <Typography variant="h1">Kepegawaian</Typography>
                 </Container>
             </Box>
         </div>

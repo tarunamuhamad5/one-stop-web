@@ -5,21 +5,27 @@ import ContentCard from "@/components/ContentCard";
 export default function Teknis() {
     const row1 = [
         {
-            title: "Keuangan",
-            src_image: "",
-            link: "/Administrasi/keuangan",
+            title: "Beban Kerja",
+            src_image: "/",
+            link: "",
             websiteType: "internal",
         },
         {
-            title: "Kepegawaian",
+            title: "Surat Dinas",
             src_image: "/",
-            link: "/Administrasi/kepegawaian",
+            link: "",
             websiteType: "internal",
         },
         {
-            title: "Umum",
+            title: "Caput",
             src_image: "/",
-            link: "/Administrasi/umum",
+            link: "",
+            websiteType: "internal",
+        },
+        {
+            title: "Link Terkait",
+            src_image: "/",
+            link: "",
             websiteType: "internal",
         },
     ];
@@ -41,7 +47,7 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h1">Administrasi</Typography>
+                    <Typography variant="h1">Umum</Typography>
                     <ContentCard DataContent={row1} />
                 </Container>
             </Box>
