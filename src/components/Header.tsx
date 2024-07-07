@@ -1,16 +1,31 @@
 "use client";
 import { Box, Container, styled, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 
-const Header = ({ enableScrollTransition = false }) => {
-    const [isScrolled, setIsScrolled] = useState(true);
+const Header = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [enableScrollTransition, setEnableScrollTransition] = useState(true);
+
+    const pathname = usePathname();
 
     const router = useRouter();
 
     useEffect(() => {
-        if (!enableScrollTransition) return;
+        if (pathname === "/") {
+            setEnableScrollTransition(true);
+            return;
+        }
+        setEnableScrollTransition(false);
+    }, [pathname]);
+
+    useEffect(() => {
+        if (!enableScrollTransition) {
+            setIsScrolled(true);
+            return;
+        }
+
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             if (scrollPosition > 0) {
@@ -19,12 +34,12 @@ const Header = ({ enableScrollTransition = false }) => {
                 setIsScrolled(false);
             }
         };
-
+        setIsScrolled(false);
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [enableScrollTransition]);
 
     const NavbarContainer = styled(Container)(({ theme }) => ({
         display: "flex",
