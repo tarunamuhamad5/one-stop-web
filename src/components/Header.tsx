@@ -101,7 +101,7 @@ const Header = () => {
                             style={{
                                 cursor: "pointer",
                             }}
-                            onClick={() => router.push("./")}
+                            onClick={() => router.push("/")}
                         />
                         <LogoText>
                             Badan Pusat Statistik
@@ -112,25 +112,25 @@ const Header = () => {
                     <NavBarBox>
                         <NavBarButton
                             variant="body2"
-                            onClick={() => router.push("./")}
+                            onClick={() => router.push("/")}
                         >
                             Home
                         </NavBarButton>
                         <NavBarButton
                             variant="body2"
-                            onClick={() => router.push("./Teknis")}
+                            onClick={() => router.push("/Teknis")}
                         >
                             Teknis
                         </NavBarButton>
                         <NavBarButton
                             variant="body2"
-                            onClick={() => router.push("./Administrasi")}
+                            onClick={() => router.push("/Administrasi")}
                         >
                             Administrasi
                         </NavBarButton>
                         <NavBarButton
                             variant="body2"
-                            onClick={() => router.push("./Contacts")}
+                            onClick={() => router.push("/Contacts")}
                         >
                             Hubungi Kami
                         </NavBarButton>

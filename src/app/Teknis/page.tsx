@@ -5,34 +5,28 @@ import ContentCard from "@/components/ContentCard";
 export default function Teknis() {
     const DataRoles = [
         {
-            title: "Susenas Maret 2024",
+            title: "Susenas Maret 20241",
             body: "Developing an embedded system to solve problems.",
             src_image: "/content/sosial/susenas.png",
+            link: "/",
+            websiteType: "internal",
         },
         {
-            title: "Susenas Maret 2024",
+            title: "Susenas Maret 20242",
             body: "Developing an embedded system to solve problems.",
             src_image: "/content/sosial/susenas.png",
+            link: "/",
+            websiteType: "external",
         },
         {
-            title: "Susenas Maret 2024",
+            title: "Susenas Maret 20243",
             body: "Developing an embedded system to solve problems.",
             src_image: "/content/sosial/susenas.png",
+            link: "https://www.youtube.com/",
+            websiteType: "external",
         },
     ];
 
-    const DataRoles2 = [
-        {
-            title: "Susenas Maret 2024",
-            body: "Developing an embedded system to solve problems.",
-            src_image: "/content/sosial/susenas.png",
-        },
-        {
-            title: "Susenas Maret 2024",
-            body: "Developing an embedded system to solve problems.",
-            src_image: "/content/sosial/susenas.png",
-        },
-    ];
     return (
         <div>
             <Box
@@ -53,7 +47,6 @@ export default function Teknis() {
                 >
                     <Typography variant="h1">Teknis Pages</Typography>
                     <ContentCard DataContent={DataRoles} />
-                    <ContentCard DataContent={DataRoles2} />
                 </Container>
             </Box>
         </div>
