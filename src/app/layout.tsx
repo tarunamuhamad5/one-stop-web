@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-    title: "One-Stop-Web",
+    title: "OSAS1611",
 };
 
 export default function RootLayout({
