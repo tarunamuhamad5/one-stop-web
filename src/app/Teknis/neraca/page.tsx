@@ -8,13 +8,13 @@ export default function Teknis() {
     const DataRoles = [
         {
             title: "Alokasi dan Monitoring Neraca Pengeluaran",
-            src_image: "",
+            src_image: "/logo/neraca.png",
             link: "https://docs.google.com/spreadsheets/d/1ZtXb_3ureB0LW434Ueq66h5lqcjMabZ9/edit?g",
             websiteType: "external",
         },
         {
             title: "Data Pendukung PDRB",
-            src_image: "",
+            src_image: "/logo/pdrb.png",
             link: "https://docs.google.com/spreadsheets/d/12qaCViP2wEuosXrAK_AsAr53z3swdU8D/edit?g",
             websiteType: "external",
         },
@@ -45,6 +45,7 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
+                    <ContentCard DataContent={DataRoles} />
                     <Typography
                         variant="h2"
                         onClick={() => {
@@ -60,7 +61,7 @@ export default function Teknis() {
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/1u4OU-1Mn5moyCi755ttz7chxbBbhgS7v/edit?usp=sharing"
                     ></iframe>
-                    <ContentCard DataContent={DataRoles} />
+
                 </Container>
             </Box>
         </div>

@@ -4,21 +4,9 @@ import { Typography, Box, Container } from "@mui/material";
 import ContentCard from "@/components/ContentCard";
 import { useRouter } from "next/navigation";
 
-export default function Teknis() {
+export default function notadinas() {
     const DataRoles = [
-        {
-            title: "Alokasi dan Monitoring",
-            src_image: "/logo/monitoring.png",
-            link: "https://docs.google.com/spreadsheets/d/16dLfTVDFFEREyk7WOESDmR2r2Q0UxyH6jnUnWgx6aWE/edit?usp=sharing",
-            websiteType: "external",
-        },
-        {
-            title: "Anomali",
-            src_image: "/logo/anomali.png",
-            link: "https://docs.google.com/spreadsheets/d/1z106TF_1iqVqXASNOAG3txtTMWc1BAon8zeY3hCio_k/edit?usp=sharing",
-            websiteType: "external",
-        },
-        
+        ,
     ];
 
     const OpenWebsite = (link: string) => {
@@ -26,7 +14,6 @@ export default function Teknis() {
     };
 
     const router = useRouter();
-
     return (
         <div>
             <Box
@@ -46,11 +33,21 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h2">
-                        Sakernas Februari 2024
-                    </Typography>
                     <ContentCard DataContent={DataRoles} />
-
+                    <Typography
+                        variant="h2"
+                        onClick={() => {
+                            OpenWebsite("https://docs.google.com/spreadsheets/d/1J-Ytmn4B3FqgBCYQHzFJpLZv_2f3GphM/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true");
+                        }}
+                    >
+                        Nota Dinas 2024
+                    </Typography>
+                    <iframe
+                        width={1000}
+                        height={800}
+                        src="https://docs.google.com/spreadsheets/d/1J-Ytmn4B3FqgBCYQHzFJpLZv_2f3GphM/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true"
+                    ></iframe>
+                    
                 </Container>
             </Box>
         </div>

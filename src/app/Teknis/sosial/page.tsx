@@ -8,19 +8,19 @@ export default function Teknis() {
     const DataRoles = [
         {
             title: "PODES",
-            src_image: "",
+            src_image: "/logo/podes.png",
             link: "/Teknis/sosial/podes",
             websiteType: "internal",
         },
         {
             title: "Susenas",
-            src_image: "/content/sosial/susenas.png",
+            src_image: "/logo/susenas.png",
             link: "/Teknis/sosial/susenas",
             websiteType: "internal",
         },
         {
             title: "Sakernas",
-            src_image: "",
+            src_image: "/logo/sakernas.png",
             link: "/Teknis/sosial/sakernas",
             websiteType: "internal",
         },

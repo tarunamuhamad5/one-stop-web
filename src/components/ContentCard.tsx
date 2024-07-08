@@ -17,6 +17,7 @@ const ContentCard = ({ DataContent }: any) => {
     }));
 
     const CardContent = styled(Card)(({ theme }) => ({
+        cursor: "pointer",
         borderRadius: "5%",
         margin: "1%",
     }));

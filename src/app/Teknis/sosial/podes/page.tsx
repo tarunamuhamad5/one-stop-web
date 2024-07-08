@@ -8,19 +8,19 @@ export default function Teknis() {
     const DataRoles = [
         {
             title: "Alokasi dan Monitoring",
-            src_image: "",
+            src_image: "/logo/monitoring.png",
             link: "https://docs.google.com/spreadsheets/d/1JwdMwj24RbHtx6g89diIpiB1eep9H1N2blY0WjhcPAM/edit?usp=sharing",
             websiteType: "external",
         },
         {
             title: "Anomali",
-            src_image: "",
+            src_image: "/logo/anomali.png",
             link: "https://docs.google.com/spreadsheets/d/1EKHP9ao6YMl-H7UNnZlDOAQdMCY7Nh7YXYUbRGALZMw/edit?usp=sharing",
             websiteType: "external",
         },
         {
             title: "Analisis IKG dan ID",
-            src_image: "",
+            src_image: "/logo/analisis.png",
             link: "https://docs.google.com/spreadsheets/d/1TIFCju_9meaSVPpSk2btttHOVuqWW6QlduLNgNWJc3E/edit?usp=sharing",
             websiteType: "external",
         },

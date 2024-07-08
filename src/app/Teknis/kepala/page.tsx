@@ -2,26 +2,26 @@ import React from "react";
 import { Typography, Box, Container } from "@mui/material";
 import ContentCard from "@/components/ContentCard";
 
-export default function Administrasi() {
+export default function kepala() {
     const row1 = [
         {
-            title: "Keuangan",
-            src_image: "/logo/keuangan.png",
-            link: "/Administrasi/keuangan",
-            websiteType: "internal",
+            title: "Matriks Peran Hasil",
+            src_image: "/logo/.png",
+            link: "https://docs.google.com/spreadsheets/d/1ND3NMhDVxibE8ySotzhqWGDzP5P2hHs_r6AflllD3fk/edit?usp=sharing",
+            websiteType: "external",
         },
         {
-            title: "Kepegawaian",
-            src_image: "/logo/kepegawaian.png",
-            link: "/Administrasi/kepegawaian",
-            websiteType: "internal",
+            title: "Form Rencana Aksi",
+            src_image: "/logo/.png",
+            link: "https://docs.google.com/spreadsheets/d/1vbM7PaTAfMyaWzyHLwrY67suIBx7MZNl/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true",
+            websiteType: "external",
         },
-        {
-            title: "Umum",
-            src_image: "/logo/umum.png",
-            link: "/Administrasi/umum",
-            websiteType: "internal",
-        },
+        // {
+        //     title: "Umum",
+        //     src_image: "/logo/umum.png",
+        //     link: "/Administrasi/umum",
+        //     websiteType: "internal",
+        // },
     ];
     return (
         <div>
@@ -41,7 +41,6 @@ export default function Administrasi() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h1">Administrasi</Typography>
                     <ContentCard DataContent={row1} />
                 </Container>
             </Box>

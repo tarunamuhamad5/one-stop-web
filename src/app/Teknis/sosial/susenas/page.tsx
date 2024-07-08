@@ -8,19 +8,19 @@ export default function Teknis() {
     const DataRoles = [
         {
             title: "Alokasi",
-            src_image: "/content/sosial/susenas.png",
+            src_image: "/logo/susenas.png",
             link: "https://docs.google.com/spreadsheets/d/1Dkf27FBjbG0gdOeHn5EWp1yXgqcfxRXtMq9cKfW2Ti0/edit?usp=sharing",
             websiteType: "external",
         },
         {
             title: "Monitoring",
-            src_image: "/content/sosial/susenas.png",
+            src_image: "/logo/monitoring.png",
             link: "https://docs.google.com/spreadsheets/d/1i_4pH_LobC6fQpWkL9vt7fLDaed5vobI_pvcuGyuzEI/edit?usp=sharing",
             websiteType: "external",
         },
         {
             title: "Anomali",
-            src_image: "/content/sosial/susenas.png",
+            src_image: "/logo/anomali.png",
             link: "https://drive.google.com/drive/folders/14LDCIS-DsmlOk91r88gZdx52whMuDypK?usp=sharing",
             websiteType: "external",
         },

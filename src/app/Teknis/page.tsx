@@ -8,7 +8,7 @@ export default function Teknis() {
         {
             title: "Ketua BPS",
             src_image: "/team/kepala-bps.png",
-            link: "/Teknis",
+            link: "/Teknis/kepala",
             websiteType: "internal",
         },
     ];
@@ -86,7 +86,6 @@ export default function Teknis() {
                     <ContentTeknis DataPosition={row1} />
                     <ContentTeknis DataPosition={row2} />
                     <ContentTeknis DataPosition={row3} />
-                    <ContentTeknis DataPosition={row4} />
                 </Container>
             </Box>
         </div>

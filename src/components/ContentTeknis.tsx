@@ -20,7 +20,7 @@ const ContentTeknis = ({ DataPosition }: any) => {
     return (
         <BoxContent justifyContent="center">
             {DataPosition.map((item: any, index: any) => (
-                <Box key={index} margin={1.5}>
+                <Box key={index} margin={1.5} sx={{ cursor: "pointer" }}>
                     <Image
                         width="350"
                         height="350"

@@ -9,12 +9,6 @@ export default function distribusi() {
         ,
     ];
 
-    const baris2 = [
-        {
-
-        },
-    ];
-
     const OpenWebsite = (link: string) => {
         window.open(link, "_blank");
     };
