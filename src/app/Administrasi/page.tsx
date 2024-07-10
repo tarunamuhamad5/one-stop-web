@@ -41,7 +41,10 @@ export default function Administrasi() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h1">Administrasi</Typography>
+                    <Typography variant="h3"
+                        style={{
+                            fontWeight: 'bold'
+                        }}>Administrasi</Typography>
                     <ContentCard DataContent={row1} />
                 </Container>
             </Box>

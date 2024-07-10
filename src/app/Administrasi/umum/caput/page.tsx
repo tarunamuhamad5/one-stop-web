@@ -4,20 +4,9 @@ import { Typography, Box, Container } from "@mui/material";
 import ContentCard from "@/components/ContentCard";
 import { useRouter } from "next/navigation";
 
-export default function neraca() {
+export default function caput() {
     const DataRoles = [
-        {
-            title: "Alokasi dan Monitoring Neraca Pengeluaran",
-            src_image: "/logo/neraca.png",
-            link: "https://docs.google.com/spreadsheets/d/1ZtXb_3ureB0LW434Ueq66h5lqcjMabZ9/edit?g",
-            websiteType: "external",
-        },
-        {
-            title: "Data Pendukung PDRB",
-            src_image: "/logo/pdrb.png",
-            link: "https://docs.google.com/spreadsheets/d/12qaCViP2wEuosXrAK_AsAr53z3swdU8D/edit?g",
-            websiteType: "external",
-        },
+        ,
     ];
 
     const OpenWebsite = (link: string) => {
@@ -25,7 +14,6 @@ export default function neraca() {
     };
 
     const router = useRouter();
-
     return (
         <div>
             <Box
@@ -53,19 +41,15 @@ export default function neraca() {
                             cursor: 'pointer'
                         }}
                         onClick={() => {
-                            OpenWebsite(
-                                "https://docs.google.com/spreadsheets/d/14fY7r3FXaX08qlgyPB67HbdFvaEfQagE0nHZcQMlj2A/edit?usp=sharing"
-                            );
+                            OpenWebsite("https://docs.google.com/spreadsheets/d/1EurTgw4BMHjojdi70LyRGkGeAzjUNBPr/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true");
                         }}
                     >
-                        Snapshot Perekonomian
+                        Capaian Output 2024
                     </Typography>
-
-
                     <iframe
                         width={1000}
                         height={800}
-                        src="https://docs.google.com/spreadsheets/d/1u4OU-1Mn5moyCi755ttz7chxbBbhgS7v/edit?usp=sharing"
+                        src="https://docs.google.com/spreadsheets/d/1EurTgw4BMHjojdi70LyRGkGeAzjUNBPr/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true"
                     ></iframe>
 
                 </Container>

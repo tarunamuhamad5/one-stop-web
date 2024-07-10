@@ -6,13 +6,13 @@ export default function kepala() {
     const row1 = [
         {
             title: "Matriks Peran Hasil",
-            src_image: "/logo/.png",
+            src_image: "/logo/mph.png",
             link: "https://docs.google.com/spreadsheets/d/1ND3NMhDVxibE8ySotzhqWGDzP5P2hHs_r6AflllD3fk/edit?usp=sharing",
             websiteType: "external",
         },
         {
             title: "Form Rencana Aksi",
-            src_image: "/logo/.png",
+            src_image: "/logo/fra.png",
             link: "https://docs.google.com/spreadsheets/d/1vbM7PaTAfMyaWzyHLwrY67suIBx7MZNl/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true",
             websiteType: "external",
         },

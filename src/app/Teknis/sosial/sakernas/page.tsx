@@ -4,7 +4,7 @@ import { Typography, Box, Container } from "@mui/material";
 import ContentCard from "@/components/ContentCard";
 import { useRouter } from "next/navigation";
 
-export default function Teknis() {
+export default function sakernas() {
     const DataRoles = [
         {
             title: "Alokasi dan Monitoring",
@@ -18,7 +18,7 @@ export default function Teknis() {
             link: "https://docs.google.com/spreadsheets/d/1z106TF_1iqVqXASNOAG3txtTMWc1BAon8zeY3hCio_k/edit?usp=sharing",
             websiteType: "external",
         },
-        
+
     ];
 
     const OpenWebsite = (link: string) => {
@@ -46,7 +46,9 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h2">
+                    <Typography
+                        variant="h3"
+                        style={{ fontWeight: 'bold' }}>
                         Sakernas Februari 2024
                     </Typography>
                     <ContentCard DataContent={DataRoles} />

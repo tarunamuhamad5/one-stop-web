@@ -36,10 +36,15 @@ export default function distribusi() {
                     <ContentCard DataContent={DataRoles} />
                     <Typography
                         variant="h2"
+                        style={{
+                            fontWeight: 'bold',
+                            cursor: "pointer",
+                        }}
                         onClick={() => {
                             OpenWebsite("https://docs.google.com/spreadsheets/d/14fY7r3FXaX08qlgyPB67HbdFvaEfQagE0nHZcQMlj2A/edit?usp=sharing");
                         }}
                     >
+
                         Monitoring Distribusi
                     </Typography>
                     <iframe
@@ -47,7 +52,7 @@ export default function distribusi() {
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRcJuCZXaI7l0UyV-6N88qP_ddETMNnLLOBIERIxUGJsnLl_vADgP7SwxaaVfPqpxnV0QvNF4pSJdl9/pubhtml"
                     ></iframe>
-                    
+
                 </Container>
             </Box>
         </div>

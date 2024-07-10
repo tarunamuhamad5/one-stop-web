@@ -35,7 +35,11 @@ export default function notadinas() {
                 >
                     <ContentCard DataContent={DataRoles} />
                     <Typography
-                        variant="h2"
+                        variant="h3"
+                        style={{
+                            fontWeight: 'bold',
+                            cursor: 'pointer'
+                        }}
                         onClick={() => {
                             OpenWebsite("https://docs.google.com/spreadsheets/d/1J-Ytmn4B3FqgBCYQHzFJpLZv_2f3GphM/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true");
                         }}
@@ -47,7 +51,7 @@ export default function notadinas() {
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/1J-Ytmn4B3FqgBCYQHzFJpLZv_2f3GphM/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true"
                     ></iframe>
-                    
+
                 </Container>
             </Box>
         </div>

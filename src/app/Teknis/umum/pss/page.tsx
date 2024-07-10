@@ -5,31 +5,17 @@ import ContentCard from "@/components/ContentCard";
 import { useRouter } from "next/navigation";
 
 export default function umum() {
-    const row1 = [
+    const DataRoles = [
         {
-            title: "Hubungan Masyarakat",
-            src_image: "/logo/humas.png",
-            link: "/Teknis/umum/humas",
+            title: "Pelaksanaan PSS",
+            src_image: "/logo/.png",
+            link: "/Teknis/umum/pss/",
             websiteType: "internal",
         },
         {
-            title: "Pembinaan Statistik Sektoral",
-            src_image: "/logo/sdi.png",
-            link: "/Teknis/umum/pss",
-            websiteType: "internal",
-        },
-    ];
-    const row2 = [
-        {
-            title: "Desa Cinta Statistik",
-            src_image: "/logo/descan.png",
-            link: "/Teknis/umum/descan",
-            websiteType: "internal",
-        },
-        {
-            title: "Zona Integritas",
-            src_image: "/logo/zi.png",
-            link: "/Teknis/umum/zi",
+            title: "EPSS",
+            src_image: "/logo/.png",
+            link: "/Teknis/umum/pss/",
             websiteType: "internal",
         },
     ];
@@ -61,16 +47,15 @@ export default function umum() {
 
                     <Typography
                         variant="h3"
-                        style={{ fontWeight: 'bold', cursor: 'pointer' }}
+                        style={{ fontWeight: 'bold'}}
                         onClick={() => {
                             OpenWebsite("https://docs.google.com/spreadsheets/d/14fY7r3FXaX08qlgyPB67HbdFvaEfQagE0nHZcQMlj2A/edit?usp=sharing");
                         }}
                     >
-                        Umum
+                        Pembinaan Statistik Sektoral
                     </Typography>
 
-                    <ContentCard DataContent={row1} />
-                    <ContentCard DataContent={row2} />
+                    <ContentCard DataContent={DataRoles} />
                 </Container>
             </Box>
         </div>

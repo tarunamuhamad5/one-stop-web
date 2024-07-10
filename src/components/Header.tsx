@@ -45,8 +45,8 @@ const Header = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        paddingBottom: theme.spacing(1.5),
-        paddingTop: theme.spacing(3),
+        paddingBottom: theme.spacing(2),
+        paddingTop: theme.spacing(2),
     }));
 
     const NavBarBox = styled(Box)(({ theme }) => ({
@@ -60,7 +60,7 @@ const Header = () => {
         color: "white",
         cursor: "pointer",
         "&:hover": {
-            color: "red",
+            color: "orange",
         },
     });
 
@@ -96,18 +96,22 @@ const Header = () => {
                         <Image
                             src="/logo/bps.png"
                             alt="Logo"
-                            height={40}
-                            width={40}
+                            height={50}
+                            width={50}
                             style={{
                                 cursor: "pointer",
+                                fontStyle: "italic"
                             }}
                             onClick={() => router.push("/")}
                         />
-                        <LogoText>
-                            Badan Pusat Statistik
+                        <LogoText style={{ fontStyle: "italic", fontWeight: "bold" }}
+                            onClick={() => router.push("/")}>
+                            BADAN PUSAT STATISTIK
                             <br />
-                            Kabupaten Empat Lawang
+                            KABUPATEN EMPAT LAWANG
+
                         </LogoText>
+
                     </NavBarLogoBox>
                     <NavBarBox>
                         <NavBarButton

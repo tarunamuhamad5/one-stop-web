@@ -11,15 +11,16 @@ export default function Teknis() {
             link: "/Teknis/kepala",
             websiteType: "internal",
         },
-    ];
-
-    const row2 = [
         {
             title: "Sub-Bagian Umum",
             src_image: "/team/subag.png",
             link: "/Teknis/umum",
             websiteType: "internal",
         },
+    ];
+
+    const row2 = [
+
         {
             title: "IPDS",
             src_image: "/team/ipds.png",
@@ -32,9 +33,6 @@ export default function Teknis() {
             link: "/Teknis/sosial",
             websiteType: "internal",
         },
-    ];
-
-    const row3 = [
         {
             title: "Produksi",
             src_image: "/team/produksi.png",
@@ -54,6 +52,12 @@ export default function Teknis() {
             websiteType: "internal",
         },
     ];
+
+    const row3 = [
+        {
+
+        }
+    ];
     const row4 = [
         {
             title: "Lainnya",
@@ -66,7 +70,6 @@ export default function Teknis() {
     return (
         <div>
             <Box
-                mt={15}
                 minHeight={"100vh"}
                 minWidth={"100%"}
                 sx={{
@@ -82,10 +85,11 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h1">Teknis</Typography>
+                    <Typography variant="h3" style={{ fontWeight: 'bold' }}>
+                        Teknis
+                    </Typography>
                     <ContentTeknis DataPosition={row1} />
                     <ContentTeknis DataPosition={row2} />
-                    <ContentTeknis DataPosition={row3} />
                 </Container>
             </Box>
         </div>

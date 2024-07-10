@@ -4,7 +4,7 @@ import { Typography, Box, Container } from "@mui/material";
 import ContentCard from "@/components/ContentCard";
 import { useRouter } from "next/navigation";
 
-export default function distribusi() {
+export default function ipds() {
     const DataRoles = [
         ,
     ];
@@ -41,7 +41,8 @@ export default function distribusi() {
                 >
                     <ContentCard DataContent={DataRoles} />
                     <Typography
-                        variant="h2"
+                        variant="h3"
+                        style={{ fontWeight: 'bold', cursor: 'pointer' }}
                         onClick={() => {
                             OpenWebsite("https://docs.google.com/spreadsheets/d/1KQs9g7rForrcNxpL3Qe8FH9BZLDOMhW6iILhUyxjzM4/edit?usp=sharing");
                         }}
@@ -51,9 +52,9 @@ export default function distribusi() {
                     <iframe
                         width={1000}
                         height={800}
-                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQPO9GXVty1XTG5yBya9_EgiH3xVNQp1cuOq8dVh0K15Ehh--P3lgkcIquVQ2p436wmm8aDx_FtvwsV/pubhtml"
+                        src="https://docs.google.com/spreadsheets/d/1KQs9g7rForrcNxpL3Qe8FH9BZLDOMhW6iILhUyxjzM4/edit?usp=sharing"
                     ></iframe>
-                    
+
                 </Container>
             </Box>
         </div>

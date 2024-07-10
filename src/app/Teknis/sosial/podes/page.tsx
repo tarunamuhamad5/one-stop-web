@@ -4,7 +4,7 @@ import { Typography, Box, Container } from "@mui/material";
 import ContentCard from "@/components/ContentCard";
 import { useRouter } from "next/navigation";
 
-export default function Teknis() {
+export default function podes() {
     const DataRoles = [
         {
             title: "Alokasi dan Monitoring",
@@ -51,7 +51,9 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h2">
+                    <Typography
+                        variant="h3"
+                        style={{ fontWeight: 'bold' }}>
                         PODES 2024
                     </Typography>
                     <ContentCard DataContent={DataRoles} />

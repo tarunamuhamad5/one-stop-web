@@ -4,24 +4,24 @@ import { Typography, Box, Container } from "@mui/material";
 import ContentCard from "@/components/ContentCard";
 import { useRouter } from "next/navigation";
 
-export default function Teknis() {
+export default function umum() {
     const row1 = [
-        // {
-        //     title: "Beban Kerja",
-        //     src_image: "/logo/bebankerja.png",
-        //     link: "",
-        //     websiteType: "internal",
-        // },
+        {
+            title: "Surat Dinas",
+            src_image: "/logo/suratdinas.png",
+            link: "https://docs.google.com/spreadsheets/d/1gyudWi6NiBg7rn16JAtVmwYtPth73LFgufUWzbLyhF4/edit?usp=sharing",
+            websiteType: "external",
+        },
         {
             title: "Nota Dinas",
-            src_image: "/logo/suratdinas.png",
+            src_image: "/logo/notadinas.png",
             link: "/Administrasi/umum/notadinas",
             websiteType: "internal",
         },
         {
             title: "Caput",
             src_image: "/logo/caput.png",
-            link: "",
+            link: "/Administrasi/umum/caput",
             websiteType: "internal",
         },
     ];
@@ -29,13 +29,13 @@ export default function Teknis() {
         {
             title: "Mitra",
             src_image: "/logo/mitra.png",
-            link: "https://docs.google.com/spreadsheets/d/19pb8YGtJ4yWQ6RZpm0WPGprYgf_gkU-HCu4SZeveVR8/edit?g",
-            websiteType: "external",
+            link: "/Administrasi/umum/mitra",
+            websiteType: "internal",
         },
         {
             title: "Link Terkait",
             src_image: "/logo/linkterkait.png",
-            link: "",
+            link: "/Administrasi/umum/linkterkait",
             websiteType: "internal",
         },
     ];
@@ -58,7 +58,12 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h1">Umum</Typography>
+                    <Typography
+                        variant="h3"
+                        style={{
+                            fontWeight: 'bold'
+                        }}>
+                        Umum</Typography>
                     <ContentCard DataContent={row1} />
                     <ContentCard DataContent={row2} />
                 </Container>

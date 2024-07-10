@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Box, Container } from "@mui/material";
 import ContentCard from "@/components/ContentCard";
 
-export default function Teknis() {
+export default function produksi() {
     const DataRoles = [
         {
             title: "SEP 2024",
@@ -52,7 +52,14 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h1">Produksi</Typography>
+                    <Typography
+                        variant="h3"
+                        style={{
+                            fontWeight: 'bold',
+                            cursor: 'pointer'
+                        }}>
+                        Produksi
+                    </Typography>
                     <ContentCard DataContent={DataRoles} />
                     <ContentCard DataContent={DataRoles2} />
                 </Container>

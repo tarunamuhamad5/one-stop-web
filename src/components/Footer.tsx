@@ -17,7 +17,7 @@ function Copyright() {
     return (
         <Typography variant="body2" color="text.secondary">
             {"Copyright © "}
-            <Link href="#">Alya Safadella&nbsp;</Link>
+            <Link href="https://www.instagram.com/alyspal_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Alya Safadella&nbsp;</Link>
             {new Date().getFullYear()}
         </Typography>
     );
@@ -93,7 +93,19 @@ export default function Footer() {
                     >
                         <FaxIcon />
                         <Typography variant="body2" fontWeight={700}>
-                            : (0702) 7321262
+                            : 
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            fontWeight={700}
+                            style={{ cursor: 'pointer' }}
+                            sx={{
+                                '&:hover': {
+                                    color: 'blue',
+                                },
+                            }}
+                        >
+                            (0702) 7321262
                         </Typography>
                     </Stack>
                     <Stack
@@ -109,7 +121,20 @@ export default function Footer() {
                     >
                         <MailIcon />
                         <Typography variant="body2" fontWeight={700}>
-                            : bps1611@bps.go.id
+                            : 
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            fontWeight={700}
+                            style={{ cursor: 'pointer' }}
+                            sx={{
+                                '&:hover': {
+                                    color: 'blue',
+                                },
+                                
+                            }}
+                        >
+                            bps1611@bps.go.id
                         </Typography>
                     </Stack>
                 </Box>

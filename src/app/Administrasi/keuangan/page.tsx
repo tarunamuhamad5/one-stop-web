@@ -2,14 +2,8 @@ import React from "react";
 import { Typography, Box, Container } from "@mui/material";
 import ContentCard from "@/components/ContentCard";
 
-export default function Teknis() {
+export default function keuangan() {
     const row1 = [
-        // {
-        // title: "RKAKL/POK",
-        // src_image: "/logo/pok.png",
-        // link: "",
-        // websiteType: "internal",
-        // },
         {
             title: "RPD",
             src_image: "/logo/anggaran.png",
@@ -19,7 +13,7 @@ export default function Teknis() {
         {
             title: "Honor",
             src_image: "/logo/honor.png",
-            link: "",
+            link: "/Administrasi/keuangan/honor",
             websiteType: "internal",
         },
     ];
@@ -41,9 +35,13 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h1">Keuangan</Typography>
+                    <Typography
+                        variant="h3"
+                        style={{
+                            fontWeight: 'bold'
+                        }}>Keuangan</Typography>
                     <ContentCard DataContent={row1} />
-                    
+
                 </Container>
             </Box>
         </div>

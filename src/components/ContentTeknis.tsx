@@ -22,8 +22,8 @@ const ContentTeknis = ({ DataPosition }: any) => {
             {DataPosition.map((item: any, index: any) => (
                 <Box key={index} margin={1.5} sx={{ cursor: "pointer" }}>
                     <Image
-                        width="350"
-                        height="350"
+                        width="300"
+                        height="300"
                         alt={item.title}
                         src={item.src_image}
                         onClick={() => {

@@ -4,7 +4,7 @@ import { Typography, Box, Container } from "@mui/material";
 import ContentCard from "@/components/ContentCard";
 import { useRouter } from "next/navigation";
 
-export default function Teknis() {
+export default function sosial() {
     const DataRoles = [
         {
             title: "PODES",
@@ -35,7 +35,6 @@ export default function Teknis() {
     return (
         <div>
             <Box
-                mt={15}
                 minHeight={"100vh"}
                 minWidth={"100%"}
                 sx={{
@@ -51,7 +50,14 @@ export default function Teknis() {
                         top: 0,
                     }}
                 >
-                    <Typography variant="h1">Sosial</Typography>
+                    <Typography
+                        variant="h3"
+                        style={{
+                            fontWeight: 'bold',
+                            cursor: 'pointer'
+                        }}>
+                        Sosial
+                    </Typography>
                     <ContentCard DataContent={DataRoles} />
                 </Container>
             </Box>

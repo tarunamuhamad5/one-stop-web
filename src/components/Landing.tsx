@@ -9,6 +9,7 @@ export default function Landing() {
         left: 0,
         top: 0,
     }));
+    
     return (
         <Box
             minHeight={"100vh"}
@@ -28,9 +29,19 @@ export default function Landing() {
                     zIndex: -1,
                 }}
             />
-            <ContainerContent>
-                <Typography variant="h2" color={"white"}>
+            <ContainerContent style={{ textAlign: 'right' }}>
+                <Typography variant="h4" color="white">
+                    Selamat Datang di
+                </Typography>
+                <Typography variant="h3" color="white" style={{ fontWeight: 'bold' }}>
                     ONE STOP ADMINISTRATION SYSTEM (OSAS)
+                </Typography>
+                <Typography variant="h4" color="white">
+                    Badan Pusat Statistik Kabupaten Empat Lawang
+                </Typography>
+                <Typography variant="h5" color="white">
+                    <br />
+                    Portal web yang dikembangkan untuk mendukung budaya kerja Aparatur Sipil Negara (ASN) menuju Flexible Working Space (FWS) dan Smart Office
                 </Typography>
             </ContainerContent>
         </Box>
