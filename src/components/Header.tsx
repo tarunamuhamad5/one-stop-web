@@ -1,5 +1,5 @@
 "use client";
-import { Box, Container, styled, Typography } from "@mui/material";
+import { Box, Button, styled,Container,  Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
@@ -77,6 +77,7 @@ const Header = () => {
         cursor: "pointer",
         fontFamily: "arial",
     });
+    
 
     return (
         <div>
@@ -124,6 +125,7 @@ const Header = () => {
                         </LogoText>
                     </NavBarLogoBox>
                     <NavBarBox>
+                        
                         <NavBarButton
                             variant="body2"
                             onClick={() => router.push("/")}

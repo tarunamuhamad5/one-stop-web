@@ -5,6 +5,8 @@ import theme from "../styles/theme";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+
+
 export const metadata: Metadata = {
     title: "OSAS1611",
 };
@@ -14,14 +16,18 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    
     return (
         <html lang="en">
             <body>
                 <AppRouterCacheProvider>
                     <ThemeProvider theme={theme}>
                         <Header />
+
                         {children}
+
                         <Footer />
+                        
                     </ThemeProvider>
                 </AppRouterCacheProvider>
             </body>

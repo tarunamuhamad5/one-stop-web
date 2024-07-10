@@ -5,7 +5,7 @@ import Landing from "@/components/Landing";
 export default function Main() {
     return (
         <div>
-            <Landing />;
+            <Landing />
         </div>
     );
 }

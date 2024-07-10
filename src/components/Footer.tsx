@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
@@ -7,6 +8,8 @@ import Typography from "@mui/material/Typography";
 
 import MailIcon from "@mui/icons-material/Mail";
 import FaxIcon from "@mui/icons-material/Fax";
+import { Button, styled } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 const logoStyle = {
     width: "140px",
@@ -17,13 +20,31 @@ function Copyright() {
     return (
         <Typography variant="body2" color="text.secondary">
             {"Copyright © "}
-            <Link href="https://www.instagram.com/alyspal_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Alya Safadella&nbsp;</Link>
+            <Link href="https://www.instagram.com/alyspal_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                Alya Safadella&nbsp;
+            </Link>
             {new Date().getFullYear()}
         </Typography>
     );
 }
 
 export default function Footer() {
+    const CustomButton = styled(Button)({
+        borderColor: "orange",
+        color: "orange",
+        backgroundColor: "white",
+        boxShadow: "none",
+        border: "1px solid",
+        "&:hover": {
+            color: "white",
+            borderColor: "white",
+            backgroundColor: "orange",
+            border: "1px solid",
+            boxShadow: "none",
+        },
+    });
+
+    const router = useRouter();
     return (
         <Container
             sx={{
@@ -35,6 +56,14 @@ export default function Footer() {
                 textAlign: { sm: "center", md: "left" },
             }}
         >
+            <CustomButton
+                variant="contained"
+                size="large"
+                sx={{ borderColor: "orange" }}
+                onClick={() => router.push("./")}
+            >
+                Back
+            </CustomButton>
             <Box
                 sx={{
                     display: "flex",
@@ -93,15 +122,15 @@ export default function Footer() {
                     >
                         <FaxIcon />
                         <Typography variant="body2" fontWeight={700}>
-                            : 
+                            :
                         </Typography>
                         <Typography
                             variant="body2"
                             fontWeight={700}
-                            style={{ cursor: 'pointer' }}
+                            style={{ cursor: "pointer" }}
                             sx={{
-                                '&:hover': {
-                                    color: 'blue',
+                                "&:hover": {
+                                    color: "blue",
                                 },
                             }}
                         >
@@ -121,17 +150,16 @@ export default function Footer() {
                     >
                         <MailIcon />
                         <Typography variant="body2" fontWeight={700}>
-                            : 
+                            :
                         </Typography>
                         <Typography
                             variant="body2"
                             fontWeight={700}
-                            style={{ cursor: 'pointer' }}
+                            style={{ cursor: "pointer" }}
                             sx={{
-                                '&:hover': {
-                                    color: 'blue',
+                                "&:hover": {
+                                    color: "blue",
                                 },
-                                
                             }}
                         >
                             bps1611@bps.go.id
