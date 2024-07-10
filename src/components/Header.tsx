@@ -8,10 +8,10 @@ const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [enableScrollTransition, setEnableScrollTransition] = useState(true);
 
-    const pathname = usePathname();
+    
 
     const router = useRouter();
-
+    const pathname = usePathname();
     useEffect(() => {
         if (pathname === "/") {
             setEnableScrollTransition(true);
