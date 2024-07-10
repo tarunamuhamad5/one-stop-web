@@ -43,10 +43,10 @@ const Header = () => {
 
     const NavbarContainer = styled(Container)(({ theme }) => ({
         display: "flex",
-        alignItems: "center",
         justifyContent: "space-between",
         paddingBottom: theme.spacing(2),
         paddingTop: theme.spacing(2),
+        overflow: "hidden",
     }));
 
     const NavBarBox = styled(Box)(({ theme }) => ({
@@ -89,9 +89,19 @@ const Header = () => {
                     backgroundColor: isScrolled ? "#212121" : "transparant",
                     zIndex: 1000,
                     transition: "background-color 0.5s ease",
+                    display: "flex",
                 }}
             >
-                <NavbarContainer>
+                <Box
+                    sx={{
+                        display: "flex",
+                        width: "100%",
+                        marginTop: "1%",
+                        marginRight: "2%",
+                        marginLeft: "2%",
+                        marginBottom: "1%",
+                    }}
+                >
                     <NavBarLogoBox>
                         <Image
                             src="/logo/bps.png"
@@ -100,18 +110,18 @@ const Header = () => {
                             width={50}
                             style={{
                                 cursor: "pointer",
-                                fontStyle: "italic"
+                                fontStyle: "italic",
                             }}
                             onClick={() => router.push("/")}
                         />
-                        <LogoText style={{ fontStyle: "italic", fontWeight: "bold" }}
-                            onClick={() => router.push("/")}>
+                        <LogoText
+                            style={{ fontStyle: "italic", fontWeight: "bold" }}
+                            onClick={() => router.push("/")}
+                        >
                             BADAN PUSAT STATISTIK
                             <br />
                             KABUPATEN EMPAT LAWANG
-
                         </LogoText>
-
                     </NavBarLogoBox>
                     <NavBarBox>
                         <NavBarButton
@@ -139,7 +149,7 @@ const Header = () => {
                             Hubungi Kami
                         </NavBarButton>
                     </NavBarBox>
-                </NavbarContainer>
+                </Box>
             </Box>
         </div>
     );
