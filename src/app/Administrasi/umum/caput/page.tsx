@@ -47,7 +47,7 @@ export default function caput() {
                         Capaian Output 2024
                     </Typography>
                     <iframe
-                        width={1000}
+                        width={1200}
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/1EurTgw4BMHjojdi70LyRGkGeAzjUNBPr/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true"
                     ></iframe>

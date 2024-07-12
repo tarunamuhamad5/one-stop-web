@@ -50,7 +50,7 @@ export default function ipds() {
                         Monitoring DLS Provinsi Sumatera Selatan
                     </Typography>
                     <iframe
-                        width={1000}
+                        width={1200}
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/1KQs9g7rForrcNxpL3Qe8FH9BZLDOMhW6iILhUyxjzM4/edit?usp=sharing"
                     ></iframe>

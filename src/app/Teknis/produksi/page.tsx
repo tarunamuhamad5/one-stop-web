@@ -36,7 +36,7 @@ export default function produksi() {
     return (
         <div>
             <Box
-                mt={15}
+                mt={10}
                 minHeight={"100vh"}
                 minWidth={"100%"}
                 sx={{

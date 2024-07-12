@@ -40,7 +40,7 @@ export default function umum() {
                         Humas Content Planning
                     </Typography>
                     <iframe
-                        width={1000}
+                        width={1200}
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/1TKFUun52ZWBSPynr3Kibfot0xXIKvlds/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true"
                     ></iframe>

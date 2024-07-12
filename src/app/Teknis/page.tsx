@@ -11,28 +11,33 @@ export default function Teknis() {
             link: "/Teknis/kepala",
             websiteType: "internal",
         },
-        {
-            title: "Sub-Bagian Umum",
-            src_image: "/team/subag.png",
-            link: "/Teknis/umum",
-            websiteType: "internal",
-        },
     ];
 
-    const row2 = [
+    const row2 =
+        [
+            {
+                title: "Sub-Bagian Umum",
+                src_image: "/team/subag.png",
+                link: "/Teknis/umum",
+                websiteType: "internal",
+            },
+            {
+                title: "IPDS",
+                src_image: "/team/ipds.png",
+                link: "/Teknis/ipds",
+                websiteType: "internal",
+            },
+            {
+                title: "sosial",
+                src_image: "/team/sosial.png",
+                link: "/Teknis/sosial",
+                websiteType: "internal",
+            },
 
-        {
-            title: "IPDS",
-            src_image: "/team/ipds.png",
-            link: "/Teknis/ipds",
-            websiteType: "internal",
-        },
-        {
-            title: "sosial",
-            src_image: "/team/sosial.png",
-            link: "/Teknis/sosial",
-            websiteType: "internal",
-        },
+        ];
+
+    const row3 = [
+
         {
             title: "Produksi",
             src_image: "/team/produksi.png",
@@ -51,12 +56,7 @@ export default function Teknis() {
             link: "/Teknis/distribusi",
             websiteType: "internal",
         },
-    ];
 
-    const row3 = [
-        {
-
-        }
     ];
     const row4 = [
         {
@@ -70,6 +70,7 @@ export default function Teknis() {
     return (
         <div>
             <Box
+                mt={15}
                 minHeight={"100vh"}
                 minWidth={"100%"}
                 sx={{
@@ -90,6 +91,7 @@ export default function Teknis() {
                     </Typography>
                     <ContentTeknis DataPosition={row1} />
                     <ContentTeknis DataPosition={row2} />
+                    <ContentTeknis DataPosition={row3} />
                 </Container>
             </Box>
         </div>

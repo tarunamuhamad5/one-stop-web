@@ -17,7 +17,7 @@ export default function distribusi() {
     return (
         <div>
             <Box
-                mt={15}
+                mt={10}
                 minHeight={"100vh"}
                 minWidth={"100%"}
                 sx={{
@@ -48,9 +48,9 @@ export default function distribusi() {
                         Monitoring Distribusi
                     </Typography>
                     <iframe
-                        width={1000}
+                        width={1200}
                         height={800}
-                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRcJuCZXaI7l0UyV-6N88qP_ddETMNnLLOBIERIxUGJsnLl_vADgP7SwxaaVfPqpxnV0QvNF4pSJdl9/pubhtml"
+                        src="https://docs.google.com/spreadsheets/d/14fY7r3FXaX08qlgyPB67HbdFvaEfQagE0nHZcQMlj2A/edit?usp=sharing"
                     ></iframe>
 
                 </Container>

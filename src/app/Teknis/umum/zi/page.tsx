@@ -40,7 +40,7 @@ export default function zi() {
                         Zona Integritas
                     </Typography>
                     <iframe
-                        width={1000}
+                        width={1200}
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/1pQLp4MBgZLNbA7o-yPa6g2TYK6HZOF3R/edit?usp=sharing&ouid=107367123867215816683&rtpof=true&sd=true"
                     ></iframe>

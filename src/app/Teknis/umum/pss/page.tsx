@@ -8,15 +8,15 @@ export default function umum() {
     const DataRoles = [
         {
             title: "Pelaksanaan PSS",
-            src_image: "/logo/.png",
-            link: "/Teknis/umum/pss/",
-            websiteType: "internal",
+            src_image: "/logo/pss.png",
+            link: "https://drive.google.com/drive/folders/125um0A2_oXtZXFxezKfPlMLQh0cE3n20?usp=sharing",
+            websiteType: "external",
         },
         {
             title: "EPSS",
-            src_image: "/logo/.png",
-            link: "/Teknis/umum/pss/",
-            websiteType: "internal",
+            src_image: "/logo/epss.png",
+            link: "https://drive.google.com/drive/folders/1jEZKSs64cfvDw_V450Nrb_5t-MdMzHl0?usp=sharing ",
+            websiteType: "external",
         },
     ];
 

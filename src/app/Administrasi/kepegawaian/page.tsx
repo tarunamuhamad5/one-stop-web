@@ -43,7 +43,7 @@ export default function kepegawaian() {
                         Matriks Perjalanan Dinas 2024
                     </Typography>
                     <iframe
-                        width={1000}
+                        width={1200}
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/13rG2Bz5c4szbGcq5N0azLEuHdd2Yq9Rf/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true"
                     ></iframe>

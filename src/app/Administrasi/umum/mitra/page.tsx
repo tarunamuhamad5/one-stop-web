@@ -47,7 +47,7 @@ export default function mitra() {
                         Alokasi Mitra 2024
                     </Typography>
                     <iframe
-                        width={1000}
+                        width={1200}
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/19pb8YGtJ4yWQ6RZpm0WPGprYgf_gkU-HCu4SZeveVR8/edit?g"
                     ></iframe>

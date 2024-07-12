@@ -47,7 +47,7 @@ export default function rpd() {
                         Rencana Penarikan Dana 2024
                     </Typography>
                     <iframe
-                        width={1000}
+                        width={1200}
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/1weVRx6QQtkQFTT5TulIegZYO0-Ruxct9/edit?usp=sharing&ouid=118011472020255728204&rtpof=true&sd=true"
                     ></iframe>

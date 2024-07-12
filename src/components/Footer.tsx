@@ -132,12 +132,6 @@ export default function Footer() {
                             <Typography
                                 variant="body2"
                                 fontWeight={700}
-                                style={{ cursor: "pointer" }}
-                                sx={{
-                                    "&:hover": {
-                                        color: "blue",
-                                    },
-                                }}
                             >
                                 (0702) 7321262
                             </Typography>
@@ -160,6 +154,7 @@ export default function Footer() {
                             <Typography
                                 variant="body2"
                                 fontWeight={700}
+                                onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=bps1611@bps.go.id', '_blank')}
                                 style={{ cursor: "pointer" }}
                                 sx={{
                                     "&:hover": {
@@ -271,12 +266,6 @@ export default function Footer() {
                             <Typography
                                 variant="body2"
                                 fontWeight={700}
-                                style={{ cursor: "pointer" }}
-                                sx={{
-                                    "&:hover": {
-                                        color: "blue",
-                                    },
-                                }}
                             >
                                 (0702) 7321262
                             </Typography>
@@ -299,6 +288,7 @@ export default function Footer() {
                             <Typography
                                 variant="body2"
                                 fontWeight={700}
+                                onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=bps1611@bps.go.id', '_blank')}
                                 style={{ cursor: "pointer" }}
                                 sx={{
                                     "&:hover": {

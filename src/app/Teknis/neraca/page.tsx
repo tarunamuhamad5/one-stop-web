@@ -45,6 +45,14 @@ export default function neraca() {
                         top: 0,
                     }}
                 >
+                    <Typography
+                        variant="h3"
+                        style={{
+                            fontWeight: 'bold'
+                        }}>
+                        Neraca
+                    </Typography>
+
                     <ContentCard DataContent={DataRoles} />
                     <Typography
                         variant="h3"
@@ -63,7 +71,7 @@ export default function neraca() {
 
 
                     <iframe
-                        width={1000}
+                        width={1200}
                         height={800}
                         src="https://docs.google.com/spreadsheets/d/1u4OU-1Mn5moyCi755ttz7chxbBbhgS7v/edit?usp=sharing"
                     ></iframe>

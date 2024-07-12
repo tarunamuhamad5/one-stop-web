@@ -43,6 +43,7 @@ export default function umum() {
     return (
         <div>
             <Box
+                mt={15}
                 minHeight={"100vh"}
                 minWidth={"100%"}
                 sx={{
